@@ -23,7 +23,6 @@ create table if not exists products
     product_id         integer primary key,
     article    varchar,
     name       varchar,
-    price      decimal,
     storage_id integer,
     constraint FK_storage_id foreign key (storage_id) references storages (storage_id)
 );

@@ -34,9 +34,4 @@ public class ProductServiceImpl implements ProductService {
         var storage = storageService.getById(storageId);
         return productRepository.findAllByStorageId(storage.getId());
     }
-
-    @Override
-    public void deleteByArticle(String article) {
-        productRepository.deleteByArticle(article);
-    }
 }

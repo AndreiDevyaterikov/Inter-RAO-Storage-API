@@ -7,4 +7,5 @@ public class Messages {
     public static String NOT_FOUND_STORAGE_WITH_ID = "Склад с id %d не найден";
     public static String EMPTY_PRODUCTS_LIST = "Не указаны товары для списания";
     public static String PRODUCTS_HAS_BEEN_SALED = "Продкуты были проданы";
+    public static String NOT_FOUND_PRODUCTS_ON_STORAGE = "Выбранные товары не находятся на складе %s";
 }

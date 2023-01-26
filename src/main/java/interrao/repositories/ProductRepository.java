@@ -10,6 +10,5 @@ import java.util.Optional;
 @Repository
 public interface ProductRepository extends JpaRepository<ProductEntity , Integer> {
     Optional<ProductEntity> findByArticle(String article);
-    List<ProductEntity> findAllByStorageId(Integer storageId);
-    void deleteByArticle(String article);
+    List<ProductEntity> findAllByStorageId(Integer storage_id);
 }

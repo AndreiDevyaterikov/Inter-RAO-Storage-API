@@ -1,5 +1,6 @@
-package interrao.controllers;
+package interrao.controllers.impl;
 
+import interrao.controllers.StorageController;
 import interrao.models.ResponseModel;
 import interrao.models.SaleProductModel;
 import interrao.services.StorageService;
@@ -13,8 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class StorageControllerImpl implements StorageController {
 
     private final StorageService storageService;
+
     @Override
     public ResponseModel sellFromStorage(SaleProductModel saleProductModel) {
-        return null;
+        return storageService.sellFromStorage(saleProductModel);
     }
 }

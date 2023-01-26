@@ -15,6 +15,7 @@ import java.util.List;
 public class ProductControllerImpl implements ProductController {
 
     private final ProductService productService;
+
     @Override
     public ProductEntity getByArticle(String article) {
         return productService.getByArticle(article);

@@ -3,8 +3,6 @@ package interrao.entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.math.BigDecimal;
-
 @Data
 @Entity
 @Table(name = "products")
@@ -20,9 +18,7 @@ public class ProductEntity {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "price")
-    private BigDecimal price;
     @OneToOne
     @JoinColumn(name = "storage_id")
-    private StorageEntity storageId;
+    private StorageEntity storage;
 }
